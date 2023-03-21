@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.Views.Page1">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                
+                
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0"  Text="Зарегистрировать отправление"  FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+            <BoxView Grid.Row="1"></BoxView>
+            <Label Grid.Row="2" x:Name="label" Text="Введите дату" TextColor="#1C375C"  HorizontalOptions="StartAndExpand" />
+            <DatePicker Grid.Row="3" Format="D" DateSelected="datePicker_DateSelected">
+                <DatePicker.MinimumDate>6/01/2020</DatePicker.MinimumDate>
+                <DatePicker.MaximumDate>6/30/2099</DatePicker.MaximumDate>
+            </DatePicker>
+           
+            <BoxView Grid.Row="5"></BoxView>
+            <Label Grid.Row="6"  Text="Время" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Entry Grid.Row="7"  IsPassword="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+            <BoxView Grid.Row="9"></BoxView>
+            <Label Grid.Row="10"  Text="Идентификационный номер" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Entry Grid.Row="11" x:Name="scan"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Completed="scan_Completed" Text="{Binding res_scan}"></Entry>
+            <ImageButton Grid.Row="11" Source="ic_add_a_photo" BackgroundColor="#0000"   HorizontalOptions="End" VerticalOptions="FillAndExpand" Clicked="ImageButton_Clicked" ></ImageButton>
+            <Button Grid.Row="12" Text="Зарегестрировать отправление" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20"></Button>
+
+            
+            
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

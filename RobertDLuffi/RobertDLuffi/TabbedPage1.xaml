@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.TabbedPage1"
+             xmlns:views="clr-namespace:RobertDLuffi.Views"
+             BarTextColor="White"
+            BarBackgroundColor="Black"
+            SelectedTabColor ="OrangeRed"
+            UnselectedTabColor="White"
+            
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+    
+  <!--Pages can be added as references or inline-->
+
+
+    <views:Page1 x:Name="p1" Title="Отправить" IconImageSource ="ic_archive"/>
+
+    <views:Page3 x:Name="p2" Title="Принять" IconImageSource ="ic_unarchive"/>
+
+    <views:Page5 Title="хз" IconImageSource="reg.png"/>
+    <views:Page4 Title="История" IconImageSource="ic_article"/>
+    <views:Page2 Title="Профиль" IconImageSource="profil.png"/>
+    <views:PageSQLcon Title="Попытка подкллючения" IconImageSource="ic_next_week.png"/>
+    
+    
+
+
+
+
+
+</TabbedPage>

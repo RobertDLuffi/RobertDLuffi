@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.Views.Page3"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable"
+             Title="Generate">
+    <ScrollView>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Button Text="Показать ШК" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="Button_Clicked"/>
+            <zxing:ZXingBarcodeImageView x:Name="img" WidthRequest="300" HeightRequest="100" BarcodeValue="46245991" BarcodeFormat="EAN_8">
+                <zxing:ZXingBarcodeImageView.BarcodeOptions>
+                    <zxcm:EncodingOptions Width="300" Height="100" />
+                </zxing:ZXingBarcodeImageView.BarcodeOptions>
+            </zxing:ZXingBarcodeImageView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

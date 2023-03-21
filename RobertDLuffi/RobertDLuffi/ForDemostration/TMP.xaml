@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.ForDemostration.TMP">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0"  Text="Просмотр отправлений" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+            
+            <BoxView Grid.Row="1"></BoxView>
+            <Label Grid.Row="2" x:Name="id" Text="Введите id отправления" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Entry Grid.Row="3" x:Name="a"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+            <BoxView Grid.Row="4"></BoxView>
+            <Button Grid.Row="5" Text="Показать отправление" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="Button_Clicked"></Button>
+            <BoxView Grid.Row="6"></BoxView>
+            <Label Grid.Row="7"  Text="Отправлление:" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Label Grid.Row="8" x:Name="lbls" Text="Отправлление:" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            
+            
+           
+           
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

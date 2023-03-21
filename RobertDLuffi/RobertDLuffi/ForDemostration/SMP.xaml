@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.ForDemostration.SMP"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label   Text="Выберите адресанта" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Picker x:Name="picker1" SelectedIndexChanged="picker1_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>Адресант 1</x:String>
+                        <x:String>Адресант 2</x:String>
+                        <x:String>Адресант 3</x:String>
+                        <x:String>Адресант 4</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label   Text="Выберите адресата" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Picker x:Name="picker2" SelectedIndexChanged="picker2_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>Адресат 1</x:String>
+                        <x:String>Адресат 2</x:String>
+                        <x:String>Адресат 3</x:String>
+                        <x:String>Адресат 4</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label   Text="Выберите тип посылки" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Picker x:Name="picker3" SelectedIndexChanged="picker3_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        
+                    </Picker.Items>
+                </Picker>
+                <Label   x:Name ="c" Text="получается шк " TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Button Text="Сгенерировать штрих код" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="Button_Clicked"/>
+                <zxing:ZXingBarcodeImageView x:Name="img" WidthRequest="300" HeightRequest="100" BarcodeValue="46245991" BarcodeFormat="EAN_8" IsVisible="False">
+                    <zxing:ZXingBarcodeImageView.BarcodeOptions>
+                        <zxcm:EncodingOptions Width="300" Height="100" />
+                    </zxing:ZXingBarcodeImageView.BarcodeOptions>
+                </zxing:ZXingBarcodeImageView>
+                <Button Text="Отчистить поле" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="Button_Clicked_1"/>
+                <Button x:Name="reg" IsVisible ="False" Text="Зарегестрировать" Clicked="Button_Clicked_2"/>
+                <Button Text="Посмотреть отправления" Clicked="Button_Clicked_3"/>
+                <Label x:Name="lbl" Text="" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

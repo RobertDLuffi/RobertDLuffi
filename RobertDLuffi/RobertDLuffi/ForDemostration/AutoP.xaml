@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.ForDemostration.AutoP">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Grid.Row="0"  Text="Профиль" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+           
+            <Label Grid.Row="1"  Text="Имя" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Label Grid.Row="2" x:Name="us_name" Text="Имя" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+            <BoxView Grid.Row="3"></BoxView>
+            <Label Grid.Row="4"  Text="Логин" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Label Grid.Row="5" x:Name="lg" Text="Логин" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+            <BoxView Grid.Row="6"></BoxView>
+            
+            <Button Grid.Row="7" x:Name="b1" Text="зарегестрировать отправление" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="b1_Clicked"></Button>
+            <BoxView Grid.Row="8"></BoxView>
+            <Button Grid.Row="10"  x:Name="b2" Text="реализация ШК" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="b2_Clicked" ></Button>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

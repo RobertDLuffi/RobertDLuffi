@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RobertDLuffi.Views.Page5">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label   Text="Зарегистрировать отправление"  FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+            
+            <Label  x:Name="label" Text="Введите дату" TextColor="#1C375C"  HorizontalOptions="StartAndExpand" />
+                <Entry  x:Name="s_date" IsPassword="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+            <Label   Text="Время" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry  x:Name="s_time" IsPassword="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <Label   Text="Откуда" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry  x:Name="s_p1" IsPassword="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <Label   Text="Куда" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry  x:Name="s_p2" IsPassword="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <Label   Text="Идентификационный номер" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+            <Entry  x:Name="scan"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></Entry>
+                <Label  x:Name="lbl" Text="Отправление :" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Button  Text="Зарегестрировать отправление" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="Button_Clicked"></Button>
+            <Button  Text="Показать таблицу с отправлениями" BackgroundColor="#1C375C" TextColor="White" CornerRadius="20" Clicked="Button_Clicked_1"></Button>
+                
+        </StackLayout>
+        </ScrollView>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
